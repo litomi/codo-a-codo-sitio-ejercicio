@@ -21,13 +21,13 @@
                         Conf. Bs As
                     </span>
                 </a>
-    
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-    
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
@@ -40,19 +40,19 @@
                             <a class="nav-link" href="#">El lugar y la fecha</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Conviérte en orador</a>
+                            <a class="nav-link" href="#formulario-oradores">Conviérte en orador</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pages/formulario.html">Comprar tickets</a>
                         </li>
                     </ul>
-                </div>   
-    
+                </div>
+
             </nav>
             <div class="row d-flex justify-content-end align-items-end w-100" id="texto-overlay">
                 <div class="col-sm-12 col-md-7">
-                    <div class="card bg-transparent text-white text-end" >
-                        <div class="card-body" >
+                    <div class="card bg-transparent text-white text-end">
+                        <div class="card-body">
                             <h1 class="card-title">Conf Bs As</h1>
                             <p class="card-text">Bs. As. por primera vez a Argentina. Un evento para compartir con
                                 nuestra comunidad el conocimiento
@@ -60,15 +60,15 @@
                                 miembros del evento, a otros Estudiantes
                                 de Codo a Codo y los oradores de primer nivel que tenemos para ti. ¡Te esperamos!
                             </p>
-                            <a href="#" class="btn btn-outline-light">Quiero ser orador</a>
-                            <a href="#" class="btn btn-success bg-verde">Comprar tickets</a>
-    
+                            <a href="#formulario-oradores" class="btn btn-outline-light">Quiero ser orador</a>
+                            <a href="pages/formulario.html" class="btn btn-success bg-verde">Comprar tickets</a>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    
+
     </header>
 
 
@@ -184,32 +184,35 @@
         </p>
     </div>
 
-    <section class="row d-flex justify-content-center">
+    <section class="row d-flex justify-content-center" id="formulario-oradores">
 
-        <div class="col-8">
-            <div class="row">
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col mt-3">
-                    <textarea class="form-control" id="comentarios" rows="3"
-                        placeholder="¿Sobre qué quieres hablar?"></textarea>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="form-text">Recuerda incluir un título en tu charla.</div>
-                <div class="row g-0">
-                    <div class="col m-3">
-                        <button type="submit" class="btn btn-primary bg-verde w-100">Enviar</button>
+            <div class="col-8">
+                <form>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="col mt-3">
+                        <textarea class="form-control" id="comentarios" rows="3"
+                            placeholder="¿Sobre qué quieres hablar?"></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-text">Recuerda incluir un título en tu charla.</div>
+                    <div class="row g-0">
+                        <div class="col m-3">
+                            <button type="submit" class="btn btn-primary bg-verde w-100">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
             </div>
 
     </section>
